@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SumSeries{
+public class SumSeries {
 	    public static void main(String[] args) 
 	    {
 	        double sum = 0;
