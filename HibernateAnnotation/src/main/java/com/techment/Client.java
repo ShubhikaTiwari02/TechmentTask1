@@ -10,12 +10,15 @@ public class Client {
 		
 		Configuration configuration = new Configuration();
 		configuration.configure("hibernate.cfg.xml");
+		
 		SessionFactory sessionFactory = configuration.buildSessionFactory();
 		Session session = sessionFactory.openSession();
+		
 		Transaction tx= session.beginTransaction();
 		Student student= new Student();
-		student.setStudentId(2);
-		student.setName("shubhika");
+		
+		student.setStudentId(5);
+		student.setName("shubhi");
 		student.setDept("MCA");
 		session.persist(student);
 		System.out.println("Inserted");

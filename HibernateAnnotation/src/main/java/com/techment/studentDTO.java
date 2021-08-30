@@ -1,17 +1,31 @@
 package com.techment;
 
- import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+public class studentDTO {
 
-@Entity
-@Table(name="student500")
-public class Student {
-
-	@Id
 	int studentId;
 	String name;
 	String dept;
+	
+	
+	public studentDTO() {
+		
+	}
+	
+	public studentDTO(int studentId, String name) {
+		super();
+		this.studentId = studentId;
+		this.name = name;
+	}
+	
+
+	public studentDTO(int studentId, String name, String dept) {
+		super();
+		this.studentId = studentId;
+		this.name = name;
+		this.dept = dept;
+	}
+	
+	
 	public int getStudentId() {
 		return studentId;
 	}
@@ -30,11 +44,6 @@ public class Student {
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
-	@Override
-	public String toString() {
-		return "Student [studentId=" + studentId + ", name=" + name + ", dept=" + dept + "]";
-	}
-	
 	
 	
 }
