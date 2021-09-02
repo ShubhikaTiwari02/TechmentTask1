@@ -29,12 +29,6 @@ System.out.println("===============================Client Application Started===
 		System.out.println("Author Last Name is : "+ author.getLastName());
 		System.out.println("Author Mobile Number is :" +author.getPhoneNumber());
 		
-
-		
-		
-		
-		
-		
 			em.getTransaction().commit();
 		System.out.println("===============================Update operation Finished==================================");
 			
