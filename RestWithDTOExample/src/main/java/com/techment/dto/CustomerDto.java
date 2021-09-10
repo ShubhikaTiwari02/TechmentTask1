@@ -1,14 +1,29 @@
 package com.techment.dto;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
+
 public class CustomerDto {
 
 	
 	private int id;
+	
+	@Size(min=3,message="name should be minimum 3 charecter")
 	private String name;
-	private int age;
+	
+	
+    private int age;
+	
+	@NotEmpty(message="Null address not allowed")
 	private String address;
+	
+	@Email(message = " Give in proper email format  @.com")
 	private String email;
+	
+	@Size(min=10,max=10, message="number should be minimum 10 not start with 0")
 	private String mobile;
+	
 	public CustomerDto(int id, String name, int age, String address, String email, String mobile) {
 		super();
 		this.id = id;

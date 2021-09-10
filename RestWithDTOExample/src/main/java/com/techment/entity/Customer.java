@@ -18,7 +18,7 @@ public class Customer {
 	private String address;
 	private String email;
 	private String mobile;
-	public Customer(int id, String name, int age, String address, String email, String mobile) {
+	public Customer(int id, String name, int age, String address, String string, String string2) {
 		super();
 		this.id = id;
 		this.name = name;
